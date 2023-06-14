@@ -4,8 +4,7 @@ import CreateNote from "./CreateNote";
 
 const getNotes = async () => {
   const res = await fetch(
-    "http://127.0.0.1:8090/api/collections/notes/records?page=1&perPage=30",
-    { cache: "no-store" }
+    "http://127.0.0.1:8090/api/collections/notes/records?page=1&perPage=30"
   );
   return res;
 };
