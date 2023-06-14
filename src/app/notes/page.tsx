@@ -3,9 +3,7 @@ import styles from "./Notes.module.css";
 import CreateNote from "./CreateNote";
 
 const getNotes = async () => {
-  const res = await fetch(
-    "http://127.0.0.1:8090/api/collections/notes/records?page=1&perPage=30"
-  );
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
   return res;
 };
 
